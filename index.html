@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nöbet Listesi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="container">
+    <h1>Nöbet Listesi</h1>
+    <label for="startDate">Başlangıç Tarihi:</label>
+    <input type="date" id="startDate" />
+    <label for="endDate">Bitiş Tarihi:</label>
+    <input type="date" id="endDate" />
+    <button id="generateSchedule">Listeyi Oluştur</button>
+    <button id="downloadExcel">Excel Olarak İndir</button>
+
+    <table class="table mt-5" id="dutyTable">
+      <thead>
+        <tr>
+          <th scope="col">Tarih</th>
+          <th scope="col">İlk Nöbetçi</th>
+          <th scope="col">İkinci Nöbetçi</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
